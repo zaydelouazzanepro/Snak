@@ -53,6 +53,7 @@ const games = [
   },
   {
     name: "roulette",
+    link : "/roulette",
     players: 387,
     url: "https://mediumrare.imgix.net/86cd89b12ec34439c0d1a6e32b06c971efc86091e09ba466182abe173c3d3f7d?w=180&h=236&fit=min&auto=format",
   },
@@ -153,7 +154,7 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap w-full md:w-300 md:h-auto justify-start items-center gap-4   px-4 mb-2 ">
           {results.map((game) => (
-            <Card players={game.players} url={game.url} />
+            <Card link={game.link} players={game.players} url={game.url} />
           ))}
         </div>
       </div>
