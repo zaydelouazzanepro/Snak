@@ -11,45 +11,24 @@ import Navbar from "./Navbar.jsx";
 import { IoIosSearch } from "react-icons/io";
 
 const games = [
+ 
   {
-    name: "Game 1",
-    players: 123,
-    url: "https://mediumrare.imgix.net/a91aa468f459264d55fb9e2706c3684782cc5ecf716892c187122c611acf2773?w=180&h=236&fit=min&auto=format",
-  },
-  {
-    name: "Game 2",
+    name: "Crash",
+    link : "/crash",
     players: 243,
     url: "https://mediumrare.imgix.net/fbf4038ed2862c3503a5d39263d1321e8d9361d730eacfbb2403fd1e5894525c?w=180&h=236&fit=min&auto=format",
   },
   {
-    name: "Game 3",
+    name: "plinko",
+    link : "/plinko",
     players: 343,
     url: "https://mediumrare.imgix.net/8c1768b783a43931a4ebc8784ce64085e39139d262e6bb50da242b9f3fda70da?w=180&h=236&fit=min&auto=format",
   },
   {
-    name: "Game 4",
+    name: "Slide",
     players: 374,
+    link : "/slide",
     url: "https://mediumrare.imgix.net/6f102e2d81847242f2dad9b3f181d5cd53195ed1f5e4a992bcb73ea9ffd58373?w=180&h=236&fit=min&auto=format",
-  },
-  {
-    name: "Game 5",
-    players: 421,
-    url: "https://mediumrare.imgix.net/9ff267150fab30e5f0cff7f09456fa2e5e966015c7fe65969104f4c4c442a746?w=150&h=200&fit=min&auto=format",
-  },
-  {
-    name: "Game 6",
-    players: 186,
-    url: "https://mediumrare.imgix.net/5e6f7bb02df67a02a9182aab05d0976a9abbac7f45997975eed765332a8b7d73?w=180&h=236&fit=min&auto=format",
-  },
-  {
-    name: "Game 7",
-    players: 298,
-    url: "https://mediumrare.imgix.net/9cd0814e4ef63607a99044eab83cc981e1df7398032041d8c8505f33796d50d1?w=150&h=200&fit=min&auto=format",
-  },
-  {
-    name: "Game 8",
-    players: 512,
-    url: "https://mediumrare.imgix.net/7a2cc695cad10b097220f0c5c81858075c3ec4ee4235d8211cbbdbbd389c6d6c?w=180&h=236&fit=min&auto=format",
   },
   {
     name: "roulette",
@@ -57,13 +36,10 @@ const games = [
     players: 387,
     url: "https://mediumrare.imgix.net/86cd89b12ec34439c0d1a6e32b06c971efc86091e09ba466182abe173c3d3f7d?w=180&h=236&fit=min&auto=format",
   },
+  
   {
-    name: "Game 10",
-    players: 634,
-    url: "https://mediumrare.imgix.net/f403357fdc65f2f81f6da97ed79b39a16804e5f583cd36c536c1ff37c6a7fb39?w=180&h=236&fit=min&auto=format",
-  },
-  {
-    name: "Game 11",
+    name: "Mines",
+    link : "/mines",
     players: 276,
     url: "https://mediumrare.imgix.net/15a51a2ae2895872ae2b600fa6fe8d7f8d32c9814766b66ddea2b288d04ba89c?w=180&h=236&fit=min&auto=format",
   },
@@ -121,7 +97,7 @@ export default function Home() {
             </h2>
           </h1>
           <p className="flex justify-center items-center gap-2">
-            <Dot /> 193{" "}
+            <div className="h-2 w-2 bg-green-500 rounded-full"></div> {games.length}
           </p>
         </span>
         <span className="bg-sky-700/30 md:w-1/2 h-12 rounded-md flex justify-between items-center px-10">
@@ -162,5 +138,5 @@ export default function Home() {
   );
 }
 const Dot = () => {
-  return <div className="h-2 w-2 bg-green-700 rounded-full"></div>;
+  return <div className="h-2 w-2 bg-red-700 rounded-full"></div>;
 };
