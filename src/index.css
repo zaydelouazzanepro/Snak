@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNovaRegular.woff2") format("woff2");
+  font-weight: 400;
+}
+@theme {
+  --font-proxima: "Proxima Nova", sans-serif;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
