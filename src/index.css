@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("/fonts/ProximaNovaRegular.woff2") format("woff2");
+  src: url("/fonts/ProximaNovaRegular.woff") format("woff2");
   font-weight: 400;
 }
 @theme {
