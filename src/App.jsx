@@ -7,6 +7,7 @@ import Mines from "./games/Mines"
 import Plinko from "./games/Plinko"
 import Slide from "./games/Slide"
 import Gold from "./games/Gold"
+import CardsLand from './pages/CardsLand';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
            <Route path="/gold" element={<Gold />} />
           <Route path="/slide" element={<Slide />} />
          <Route path="/plinko" element={<Plinko />} />
+          <Route path="/cardsland" element={<CardsLand />} />
 
     </Routes>
   )
